@@ -1,0 +1,924 @@
+[{
+	access: [APublic, AStatic]
+	doc: null
+	kind: FFun({
+		args: []
+		expr: {
+			expr: EReturn({
+				expr: ECall({
+					expr: EField({
+						expr: EField({
+							expr: EField({
+								expr: EConst(CIdent(tink))
+								pos: #pos
+							}, core)
+							pos: #pos
+						}, Promise)
+						pos: #pos
+					}, lift)
+					pos: #pos
+				}, [{
+					expr: ECall({
+						expr: EField({
+							expr: EField({
+								expr: EField({
+									expr: EConst(CIdent(tink))
+									pos: #pos
+								}, core)
+								pos: #pos
+							}, Future)
+							pos: #pos
+						}, async)
+						pos: #pos
+					}, [{
+						expr: EFunction(FAnonymous, {
+							args: [{
+								meta: null
+								name: __return
+								opt: false
+								type: null
+								value: null
+							}]
+							expr: {
+								expr: ETry({
+									expr: ECall({
+										expr: EField({
+											expr: ECall({
+												expr: EField({
+													expr: ECall({
+														expr: EField({
+															expr: EConst(CIdent(Puppeteer))
+															pos: #pos
+														}, launch)
+														pos: #pos
+													}, [{
+														expr: EObjectDecl([{
+															expr: {
+																expr: EConst(CIdent(false))
+																pos: #pos
+															}
+															field: headless
+															quotes: Unquoted
+														}, {
+															expr: {
+																expr: EConst(CIdent(true))
+																pos: #pos
+															}
+															field: devtools
+															quotes: Unquoted
+														}])
+														pos: #pos
+													}])
+													pos: #pos
+												}, toPromise)
+												pos: #pos
+											}, [])
+											pos: #pos
+										}, handle)
+										pos: #pos
+									}, [{
+										expr: EFunction(null, {
+											args: [{
+												meta: null
+												name: __t0
+												opt: false
+												type: null
+												value: null
+											}]
+											expr: {
+												expr: ETry({
+													expr: EBlock([{
+														expr: EVars([{
+															expr: null
+															isFinal: false
+															meta: []
+															name: __t0_result
+															type: null
+														}])
+														pos: #pos
+													}, {
+														expr: ESwitch({
+															expr: ECall({
+																expr: EField({
+																	expr: EField({
+																		expr: EField({
+																			expr: EConst(CIdent(tink))
+																			pos: #pos
+																		}, await)
+																		pos: #pos
+																	}, OutcomeTools)
+																	pos: #pos
+																}, getOutcome)
+																pos: #pos
+															}, [{
+																expr: EConst(CIdent(__t0))
+																pos: #pos
+															}])
+															pos: #pos
+														}, [{
+															expr: {
+																expr: EBlock([{
+																	expr: EBinop(OpAssign, {
+																		expr: EConst(CIdent(__t0_result))
+																		pos: #pos
+																	}, {
+																		expr: EConst(CIdent(v))
+																		pos: #pos
+																	})
+																	pos: #pos
+																}])
+																pos: #pos
+															}
+															guard: null
+															values: [{
+																expr: ECall({
+																	expr: EConst(CIdent(Success))
+																	pos: #pos
+																}, [{
+																	expr: EConst(CIdent(v))
+																	pos: #pos
+																}])
+																pos: #pos
+															}]
+														}, {
+															expr: {
+																expr: EBlock([{
+																	expr: ECall({
+																		expr: EConst(CIdent(__return))
+																		pos: #pos
+																	}, [{
+																		expr: ECall({
+																			expr: EField({
+																				expr: EField({
+																					expr: EField({
+																						expr: EConst(CIdent(tink))
+																						pos: #pos
+																					}, core)
+																					pos: #pos
+																				}, Outcome)
+																				pos: #pos
+																			}, Failure)
+																			pos: #pos
+																		}, [{
+																			expr: EConst(CIdent(e))
+																			pos: #pos
+																		}])
+																		pos: #pos
+																	}])
+																	pos: #pos
+																}, {
+																	expr: EReturn(null)
+																	pos: #pos
+																}])
+																pos: #pos
+															}
+															guard: null
+															values: [{
+																expr: ECall({
+																	expr: EConst(CIdent(Failure))
+																	pos: #pos
+																}, [{
+																	expr: EConst(CIdent(e))
+																	pos: #pos
+																}])
+																pos: #pos
+															}]
+														}], null)
+														pos: #pos
+													}, {
+														expr: EBlock([{
+															expr: EVars([{
+																expr: {
+																	expr: EConst(CIdent(__t0_result))
+																	pos: #pos
+																}
+																isFinal: false
+																meta: []
+																name: browser
+																type: TPath({
+																	name: Browser
+																	pack: []
+																	params: []
+																	sub: null
+																})
+															}])
+															pos: #pos
+														}, {
+															expr: ECall({
+																expr: EField({
+																	expr: ECall({
+																		expr: EField({
+																			expr: ECall({
+																				expr: EField({
+																					expr: EConst(CIdent(browser))
+																					pos: #pos
+																				}, newPage)
+																				pos: #pos
+																			}, [])
+																			pos: #pos
+																		}, toPromise)
+																		pos: #pos
+																	}, [])
+																	pos: #pos
+																}, handle)
+																pos: #pos
+															}, [{
+																expr: EFunction(null, {
+																	args: [{
+																		meta: null
+																		name: __t1
+																		opt: false
+																		type: null
+																		value: null
+																	}]
+																	expr: {
+																		expr: ETry({
+																			expr: EBlock([{
+																				expr: EVars([{
+																					expr: null
+																					isFinal: false
+																					meta: []
+																					name: __t1_result
+																					type: null
+																				}])
+																				pos: #pos
+																			}, {
+																				expr: ESwitch({
+																					expr: ECall({
+																						expr: EField({
+																							expr: EField({
+																								expr: EField({
+																									expr: EConst(CIdent(tink))
+																									pos: #pos
+																								}, await)
+																								pos: #pos
+																							}, OutcomeTools)
+																							pos: #pos
+																						}, getOutcome)
+																						pos: #pos
+																					}, [{
+																						expr: EConst(CIdent(__t1))
+																						pos: #pos
+																					}])
+																					pos: #pos
+																				}, [{
+																					expr: {
+																						expr: EBlock([{
+																							expr: EBinop(OpAssign, {
+																								expr: EConst(CIdent(__t1_result))
+																								pos: #pos
+																							}, {
+																								expr: EConst(CIdent(v))
+																								pos: #pos
+																							})
+																							pos: #pos
+																						}])
+																						pos: #pos
+																					}
+																					guard: null
+																					values: [{
+																						expr: ECall({
+																							expr: EConst(CIdent(Success))
+																							pos: #pos
+																						}, [{
+																							expr: EConst(CIdent(v))
+																							pos: #pos
+																						}])
+																						pos: #pos
+																					}]
+																				}, {
+																					expr: {
+																						expr: EBlock([{
+																							expr: ECall({
+																								expr: EConst(CIdent(__return))
+																								pos: #pos
+																							}, [{
+																								expr: ECall({
+																									expr: EField({
+																										expr: EField({
+																											expr: EField({
+																												expr: EConst(CIdent(tink))
+																												pos: #pos
+																											}, core)
+																											pos: #pos
+																										}, Outcome)
+																										pos: #pos
+																									}, Failure)
+																									pos: #pos
+																								}, [{
+																									expr: EConst(CIdent(e))
+																									pos: #pos
+																								}])
+																								pos: #pos
+																							}])
+																							pos: #pos
+																						}, {
+																							expr: EReturn(null)
+																							pos: #pos
+																						}])
+																						pos: #pos
+																					}
+																					guard: null
+																					values: [{
+																						expr: ECall({
+																							expr: EConst(CIdent(Failure))
+																							pos: #pos
+																						}, [{
+																							expr: EConst(CIdent(e))
+																							pos: #pos
+																						}])
+																						pos: #pos
+																					}]
+																				}], null)
+																				pos: #pos
+																			}, {
+																				expr: EBlock([{
+																					expr: EVars([{
+																						expr: {
+																							expr: EConst(CIdent(__t1_result))
+																							pos: #pos
+																						}
+																						isFinal: false
+																						meta: []
+																						name: page
+																						type: null
+																					}])
+																					pos: #pos
+																				}, {
+																					expr: ECall({
+																						expr: EField({
+																							expr: ECall({
+																								expr: EField({
+																									expr: ECall({
+																										expr: EField({
+																											expr: EConst(CIdent(page))
+																											pos: #pos
+																										}, setViewport)
+																										pos: #pos
+																									}, [{
+																										expr: EObjectDecl([{
+																											expr: {
+																												expr: EConst(CInt(375))
+																												pos: #pos
+																											}
+																											field: width
+																											quotes: Unquoted
+																										}, {
+																											expr: {
+																												expr: EConst(CInt(667))
+																												pos: #pos
+																											}
+																											field: height
+																											quotes: Unquoted
+																										}, {
+																											expr: {
+																												expr: EConst(CIdent(true))
+																												pos: #pos
+																											}
+																											field: isMobile
+																											quotes: Unquoted
+																										}, {
+																											expr: {
+																												expr: EConst(CIdent(true))
+																												pos: #pos
+																											}
+																											field: hasTouch
+																											quotes: Unquoted
+																										}])
+																										pos: #pos
+																									}])
+																									pos: #pos
+																								}, toPromise)
+																								pos: #pos
+																							}, [])
+																							pos: #pos
+																						}, handle)
+																						pos: #pos
+																					}, [{
+																						expr: EFunction(null, {
+																							args: [{
+																								meta: null
+																								name: __t2
+																								opt: false
+																								type: null
+																								value: null
+																							}]
+																							expr: {
+																								expr: ETry({
+																									expr: EBlock([{
+																										expr: EVars([{
+																											expr: null
+																											isFinal: false
+																											meta: []
+																											name: __t2_result
+																											type: null
+																										}])
+																										pos: #pos
+																									}, {
+																										expr: ESwitch({
+																											expr: ECall({
+																												expr: EField({
+																													expr: EField({
+																														expr: EField({
+																															expr: EConst(CIdent(tink))
+																															pos: #pos
+																														}, await)
+																														pos: #pos
+																													}, OutcomeTools)
+																													pos: #pos
+																												}, getOutcome)
+																												pos: #pos
+																											}, [{
+																												expr: EConst(CIdent(__t2))
+																												pos: #pos
+																											}])
+																											pos: #pos
+																										}, [{
+																											expr: {
+																												expr: EBlock([{
+																													expr: EBinop(OpAssign, {
+																														expr: EConst(CIdent(__t2_result))
+																														pos: #pos
+																													}, {
+																														expr: EConst(CIdent(v))
+																														pos: #pos
+																													})
+																													pos: #pos
+																												}])
+																												pos: #pos
+																											}
+																											guard: null
+																											values: [{
+																												expr: ECall({
+																													expr: EConst(CIdent(Success))
+																													pos: #pos
+																												}, [{
+																													expr: EConst(CIdent(v))
+																													pos: #pos
+																												}])
+																												pos: #pos
+																											}]
+																										}, {
+																											expr: {
+																												expr: EBlock([{
+																													expr: ECall({
+																														expr: EConst(CIdent(__return))
+																														pos: #pos
+																													}, [{
+																														expr: ECall({
+																															expr: EField({
+																																expr: EField({
+																																	expr: EField({
+																																		expr: EConst(CIdent(tink))
+																																		pos: #pos
+																																	}, core)
+																																	pos: #pos
+																																}, Outcome)
+																																pos: #pos
+																															}, Failure)
+																															pos: #pos
+																														}, [{
+																															expr: EConst(CIdent(e))
+																															pos: #pos
+																														}])
+																														pos: #pos
+																													}])
+																													pos: #pos
+																												}, {
+																													expr: EReturn(null)
+																													pos: #pos
+																												}])
+																												pos: #pos
+																											}
+																											guard: null
+																											values: [{
+																												expr: ECall({
+																													expr: EConst(CIdent(Failure))
+																													pos: #pos
+																												}, [{
+																													expr: EConst(CIdent(e))
+																													pos: #pos
+																												}])
+																												pos: #pos
+																											}]
+																										}], null)
+																										pos: #pos
+																									}, {
+																										expr: EBlock([{
+																											expr: EVars([{
+																												expr: {
+																													expr: EConst(CIdent(__t2_result))
+																													pos: #pos
+																												}
+																												isFinal: false
+																												meta: []
+																												name: x
+																												type: null
+																											}])
+																											pos: #pos
+																										}, {
+																											expr: ECall({
+																												expr: EField({
+																													expr: ECall({
+																														expr: EField({
+																															expr: ECall({
+																																expr: EField({
+																																	expr: EConst(CIdent(page))
+																																	pos: #pos
+																																}, goto)
+																																pos: #pos
+																															}, [{
+																																expr: EConst(CString(https://www.baidu.com, SingleQuotes))
+																																pos: #pos
+																															}])
+																															pos: #pos
+																														}, toPromise)
+																														pos: #pos
+																													}, [])
+																													pos: #pos
+																												}, handle)
+																												pos: #pos
+																											}, [{
+																												expr: EFunction(null, {
+																													args: [{
+																														meta: null
+																														name: __t3
+																														opt: false
+																														type: null
+																														value: null
+																													}]
+																													expr: {
+																														expr: ETry({
+																															expr: EBlock([{
+																																expr: EVars([{
+																																	expr: null
+																																	isFinal: false
+																																	meta: []
+																																	name: __t3_result
+																																	type: null
+																																}])
+																																pos: #pos
+																															}, {
+																																expr: ESwitch({
+																																	expr: ECall({
+																																		expr: EField({
+																																			expr: EField({
+																																				expr: EField({
+																																					expr: EConst(CIdent(tink))
+																																					pos: #pos
+																																				}, await)
+																																				pos: #pos
+																																			}, OutcomeTools)
+																																			pos: #pos
+																																		}, getOutcome)
+																																		pos: #pos
+																																	}, [{
+																																		expr: EConst(CIdent(__t3))
+																																		pos: #pos
+																																	}])
+																																	pos: #pos
+																																}, [{
+																																	expr: {
+																																		expr: EBlock([{
+																																			expr: EBinop(OpAssign, {
+																																				expr: EConst(CIdent(__t3_result))
+																																				pos: #pos
+																																			}, {
+																																				expr: EConst(CIdent(v))
+																																				pos: #pos
+																																			})
+																																			pos: #pos
+																																		}])
+																																		pos: #pos
+																																	}
+																																	guard: null
+																																	values: [{
+																																		expr: ECall({
+																																			expr: EConst(CIdent(Success))
+																																			pos: #pos
+																																		}, [{
+																																			expr: EConst(CIdent(v))
+																																			pos: #pos
+																																		}])
+																																		pos: #pos
+																																	}]
+																																}, {
+																																	expr: {
+																																		expr: EBlock([{
+																																			expr: ECall({
+																																				expr: EConst(CIdent(__return))
+																																				pos: #pos
+																																			}, [{
+																																				expr: ECall({
+																																					expr: EField({
+																																						expr: EField({
+																																							expr: EField({
+																																								expr: EConst(CIdent(tink))
+																																								pos: #pos
+																																							}, core)
+																																							pos: #pos
+																																						}, Outcome)
+																																						pos: #pos
+																																					}, Failure)
+																																					pos: #pos
+																																				}, [{
+																																					expr: EConst(CIdent(e))
+																																					pos: #pos
+																																				}])
+																																				pos: #pos
+																																			}])
+																																			pos: #pos
+																																		}, {
+																																			expr: EReturn(null)
+																																			pos: #pos
+																																		}])
+																																		pos: #pos
+																																	}
+																																	guard: null
+																																	values: [{
+																																		expr: ECall({
+																																			expr: EConst(CIdent(Failure))
+																																			pos: #pos
+																																		}, [{
+																																			expr: EConst(CIdent(e))
+																																			pos: #pos
+																																		}])
+																																		pos: #pos
+																																	}]
+																																}], null)
+																																pos: #pos
+																															}, {
+																																expr: EBlock([{
+																																	expr: EConst(CIdent(__t3_result))
+																																	pos: #pos
+																																}, {
+																																	expr: EReturn({
+																																		expr: ECall({
+																																			expr: EConst(CIdent(__return))
+																																			pos: #pos
+																																		}, [{
+																																			expr: ECall({
+																																				expr: EField({
+																																					expr: EField({
+																																						expr: EField({
+																																							expr: EConst(CIdent(tink))
+																																							pos: #pos
+																																						}, core)
+																																						pos: #pos
+																																					}, Outcome)
+																																					pos: #pos
+																																				}, Success)
+																																				pos: #pos
+																																			}, [{
+																																				expr: null <- expected value
+																																				pos: null <- expected value
+																																			}])
+																																			pos: #pos
+																																		}])
+																																		pos: #pos
+																																	})
+																																	pos: #pos
+																																}])
+																																pos: #pos
+																															}])
+																															pos: #pos
+																														}, [{
+																															expr: {
+																																expr: ECall({
+																																	expr: EConst(CIdent(__return))
+																																	pos: #pos
+																																}, [{
+																																	expr: ECall({
+																																		expr: EField({
+																																			expr: EField({
+																																				expr: EField({
+																																					expr: EConst(CIdent(tink))
+																																					pos: #pos
+																																				}, core)
+																																				pos: #pos
+																																			}, Outcome)
+																																			pos: #pos
+																																		}, Failure)
+																																		pos: #pos
+																																	}, [{
+																																		expr: EConst(CIdent(e))
+																																		pos: #pos
+																																	}])
+																																	pos: #pos
+																																}])
+																																pos: #pos
+																															}
+																															name: e
+																															type: TPath({
+																																name: Dynamic
+																																pack: []
+																																params: []
+																																sub: null
+																															})
+																														}])
+																														pos: #pos
+																													}
+																													params: []
+																													ret: null
+																												})
+																												pos: #pos
+																											}])
+																											pos: #pos
+																										}])
+																										pos: #pos
+																									}])
+																									pos: #pos
+																								}, [{
+																									expr: {
+																										expr: ECall({
+																											expr: EConst(CIdent(__return))
+																											pos: #pos
+																										}, [{
+																											expr: ECall({
+																												expr: EField({
+																													expr: EField({
+																														expr: EField({
+																															expr: EConst(CIdent(tink))
+																															pos: #pos
+																														}, core)
+																														pos: #pos
+																													}, Outcome)
+																													pos: #pos
+																												}, Failure)
+																												pos: #pos
+																											}, [{
+																												expr: EConst(CIdent(e))
+																												pos: #pos
+																											}])
+																											pos: #pos
+																										}])
+																										pos: #pos
+																									}
+																									name: e
+																									type: TPath({
+																										name: Dynamic
+																										pack: []
+																										params: []
+																										sub: null
+																									})
+																								}])
+																								pos: #pos
+																							}
+																							params: []
+																							ret: null
+																						})
+																						pos: #pos
+																					}])
+																					pos: #pos
+																				}])
+																				pos: #pos
+																			}])
+																			pos: #pos
+																		}, [{
+																			expr: {
+																				expr: ECall({
+																					expr: EConst(CIdent(__return))
+																					pos: #pos
+																				}, [{
+																					expr: ECall({
+																						expr: EField({
+																							expr: EField({
+																								expr: EField({
+																									expr: EConst(CIdent(tink))
+																									pos: #pos
+																								}, core)
+																								pos: #pos
+																							}, Outcome)
+																							pos: #pos
+																						}, Failure)
+																						pos: #pos
+																					}, [{
+																						expr: EConst(CIdent(e))
+																						pos: #pos
+																					}])
+																					pos: #pos
+																				}])
+																				pos: #pos
+																			}
+																			name: e
+																			type: TPath({
+																				name: Dynamic
+																				pack: []
+																				params: []
+																				sub: null
+																			})
+																		}])
+																		pos: #pos
+																	}
+																	params: []
+																	ret: null
+																})
+																pos: #pos
+															}])
+															pos: #pos
+														}])
+														pos: #pos
+													}])
+													pos: #pos
+												}, [{
+													expr: {
+														expr: ECall({
+															expr: EConst(CIdent(__return))
+															pos: #pos
+														}, [{
+															expr: ECall({
+																expr: EField({
+																	expr: EField({
+																		expr: EField({
+																			expr: EConst(CIdent(tink))
+																			pos: #pos
+																		}, core)
+																		pos: #pos
+																	}, Outcome)
+																	pos: #pos
+																}, Failure)
+																pos: #pos
+															}, [{
+																expr: EConst(CIdent(e))
+																pos: #pos
+															}])
+															pos: #pos
+														}])
+														pos: #pos
+													}
+													name: e
+													type: TPath({
+														name: Dynamic
+														pack: []
+														params: []
+														sub: null
+													})
+												}])
+												pos: #pos
+											}
+											params: []
+											ret: null
+										})
+										pos: #pos
+									}])
+									pos: #pos
+								}, [{
+									expr: {
+										expr: ECall({
+											expr: EConst(CIdent(__return))
+											pos: #pos
+										}, [{
+											expr: ECall({
+												expr: EField({
+													expr: EField({
+														expr: EField({
+															expr: EConst(CIdent(tink))
+															pos: #pos
+														}, core)
+														pos: #pos
+													}, Outcome)
+													pos: #pos
+												}, Failure)
+												pos: #pos
+											}, [{
+												expr: EConst(CIdent(e))
+												pos: #pos
+											}])
+											pos: #pos
+										}])
+										pos: #pos
+									}
+									name: e
+									type: TPath({
+										name: Dynamic
+										pack: []
+										params: []
+										sub: null
+									})
+								}])
+								pos: #pos
+							}
+							params: []
+							ret: null
+						})
+						pos: #pos
+					}])
+					pos: #pos
+				}])
+				pos: #pos
+			})
+			pos: #pos
+		}
+		params: []
+		ret: null
+	})
+	meta: [{
+		name: async
+		params: []
+		pos: #pos
+	}]
+	name: main
+	pos: #pos
+}]
+line 673: expected value
+line 674: expected value

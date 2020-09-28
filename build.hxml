@@ -1,0 +1,7 @@
+--class-path src
+--main Main
+--library puppeteer
+--library tink_await
+--library random
+--js Main.js
+--dce full
